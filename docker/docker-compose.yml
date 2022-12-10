@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  build:
+    working_dir: /cumulus-dashboard
+    image: dashboard-build:${TAG-}
+    build:
+      dockerfile: docker/Dockerfile
+      context: ../
+      target: build
+      args:
+        - APIROOT
+        - AUTH_METHOD
+        - AWS_REGION
+        - DAAC_NAME
+        - ENABLE_RECOVERY
+        - HIDE_PDR
+        - KIBANAROOT
+        - SERVED_BY_CUMULUS_API
+        - STAGE
+  dashboard:
+    working_dir: /cumulus-dashboard
+    image: ${IMAGE_NAME}
+    build:
+      dockerfile: docker/Dockerfile
+      context: ../
+      args:
+        - APIROOT
+        - AUTH_METHOD
+        - AWS_REGION
+        - DAAC_NAME
+        - ENABLE_RECOVERY
+        - HIDE_PDR
+        - KIBANAROOT
+        - SERVED_BY_CUMULUS_API
+        - STAGE

@@ -1,0 +1,122 @@
+/******************************************************************
+                    React Date Time Picker - Overrides
+******************************************************************/
+/*
+We are using React Date Time Picker for the Datepicker component
+these are the styling imports for that dependency. Here are our
+styling overrides
+*/
+
+/*.react-datetime-picker__clear-button {
+  content: "";
+  display: none;
+}*/
+
+.react-datetime-picker__inputGroup,
+.react-calendar__month-view__days,
+.react-calendar__month-view__weekdays {
+  color: $dark-grey;
+}
+
+.react-datetime-picker__calendar.react-datetime-picker__calendar--open {
+  top: 100%;
+  bottom: unset;
+  left: 0px;
+  right: unset;
+  z-index: 99;
+}
+
+.react-datetime-picker__wrapper {
+  border: 1px solid lighten($lightest-grey, 4%);
+}
+
+.react-datetime-picker__calendar .react-calendar__navigation {
+  background-color: $ocean-blue;
+  color: $white;
+}
+
+.react-datetime-picker__inputGroup {
+  width: 200px !important;
+  font-family: $code-font-family;
+
+  // Firefox hack -- Mozilla does not render the <select> carrot correctly.
+  // this replaces the icon only in Firefox.
+  @-moz-document url-prefix() {
+    &:before {
+      content: '\f107';
+      font-family: 'FontAwesome';
+      color: $black;
+      display: inline-block;
+      position: relative;
+      left: 13.25em;
+      pointer-events: none;
+      z-index: 1;
+    }
+  }
+
+}
+
+.react-datetime-picker__inputGroup__input {
+  box-shadow: none;
+}
+
+.react-datetime-picker__inputGroup__input:invalid {
+  background: rgba($color: #2685c1, $alpha: 0.1) !important;
+}
+
+.react-datetime-picker__inputGroup__amPm {
+  appearance: menulist;
+  -moz-appearance: none !important;
+  width: 40px;
+
+  // Firefox hack -- We need to ensure the <select> dropdown
+  // is large enough to contain the replacement carrot above.
+  @-moz-document url-prefix() {
+    width: 55px;
+  }
+}
+
+.react-datetime-picker__calendar .react-calendar__tile--active {
+  background: $ocean-blue !important;
+  color: $white !important;
+}
+
+.react-datetime-picker__calendar .react-calendar__tile:enabled:hover,
+.react-calendar__tile:enabled:focus {
+  background-color: rgba($color: #2685c1, $alpha: 0.54) !important;
+  color: $black !important;
+}
+
+.react-datetime-picker__wrapper {
+  border: 1px solid lighten($lightest-grey, 4%) !important;
+  box-shadow: $shadow__default;
+  background-color: $white;
+  border-radius: 0.5em;
+  padding: 5.5px 2px;
+}
+
+.react-datetime-picker__inputGroup__input option:first-child {
+    &:before {
+      color: $ocean-blue;
+      position: absolute;
+      font-family: 'FontAwesome';
+      content: '\f0d7';
+      font-weight: 900;
+      width: 14px;
+      height: 14px;
+      background-size: 14px 14px;
+      display: block;
+      right: .8em;
+      top: .5em;
+    }
+  }
+
+  .react-datetime-picker__inputGroup__leadingZero {
+  font-size: 1.2em;
+  visibility: hidden;
+}
+
+.react-datetime-picker__inputGroup__input.react-datetime-picker__inputGroup__month,
+.react-datetime-picker__inputGroup__input.react-datetime-picker__inputGroup__day {
+  width: 14px !important;
+}

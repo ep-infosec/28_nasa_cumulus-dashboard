@@ -1,0 +1,55 @@
+{
+  "meta": {
+    "name": "cumulus-api",
+    "stack": "anyStack",
+    "table": "reconciliationReport",
+    "limit": 10,
+    "page": 1,
+    "count": 5,
+    "fixtureComment": "These files need to exist and be uploaded into the localstack s3 buckets that match the location"
+  },
+  "results": [
+    {
+      "name": "inventoryReport-20200114T205238781",
+      "location": "s3://localbucket/localrun/reconciliation-reports/inventoryReport-20200114T205238781.json",
+      "type": "Inventory",
+      "status": "Generated"
+    },
+    {
+      "name": "granuleNotFoundReport-20200827T210339679",
+      "location": "s3://localbucket/localrun/reconciliation-reports/granuleNotFoundReport-20200827T210339679.json",
+      "type": "Granule Not Found",
+      "status": "Generated"
+    },
+    {
+      "name": "inventoryReport-2020/01/14T202529026",
+      "location": "s3://localbucket/localrun/reconciliation-reports/inventoryReport-2020_01_14T202529026.json",
+      "type": "Inventory",
+      "status": "Generated"
+    },
+    {
+      "name": "inventoryReport-20200519T143311876",
+      "location": "s3://localbucket/localrun/reconciliation-reports/inventoryReport-20200519T143311876.json",
+      "type": "Inventory",
+      "status": "Failed"
+    },
+    {
+      "name": "InternalReport092020",
+      "location": "s3://localbucket/localrun/reconciliation-reports/InternalReport092020.json",
+      "type": "Internal",
+      "status": "Generated"
+    },
+    {
+      "name": "GranuleList100220",
+      "location": "s3://localbucket/localrun/reconciliation-reports/GranuleList100220.csv",
+      "type": "Granule Inventory",
+      "status": "Generated"
+    },
+    {
+      "name": "orcaBackupReport-20220111T191341153",
+      "location": "s3://localbucket/localrun/reconciliation-reports/orcaBackupReport-20220111T191341153.json",
+      "type": "ORCA Backup",
+      "status": "Generated"
+    }
+  ]
+}

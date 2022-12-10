@@ -1,0 +1,302 @@
+/* modal */
+
+.modal__cover {
+  background-color: #999;
+  opacity: 0.85;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  opacity: 0.85;
+  z-index: 999;
+
+  &:after {
+    -moz-box-shadow: inset 0 0 10em #000;
+    -webkit-box-shadow: inset 0 0 10em #000;
+    box-shadow: inset 0 0 10em #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    content: "";
+  }
+}
+
+.modal__container {
+  left: 0;
+  margin-top: 10%;
+  overflow: visible;
+  position: fixed;
+  transition: top 0.2s ease-in-out;
+  text-align: center;
+  top: 100%;
+  width: 100%;
+  z-index: 1000;
+}
+
+.modal__container--onscreen {
+  top: 0;
+}
+
+.modal__formcenter {
+  text-align: center;
+}
+
+.modal__loading {
+  bottom: 12px;
+  left: 0;
+  height: 6px;
+  position: absolute;
+  width: 100%;
+}
+
+.modal__loading--inner {
+  position: relative;
+}
+
+.modal__loading--progress {
+  left: 0;
+  height: 6px;
+  position: absolute;
+  transition: width 0.2s linear;
+  background-color: $royal-purple;
+}
+
+.modal .modal__internal .error__report {
+  margin: 0em 0em 5em 0em;
+}
+
+.modal__loading--progress--success {
+  background-color: $light-green;
+}
+.modal__loading--progress--error {
+  background-color: $error-red;
+}
+
+.modal__title--success {
+  color: $light-green;
+}
+.modal__title--error {
+  color: $error-red;
+}
+
+// Login Modal
+.oauth-modal__title.modal-title.h4 {
+  text-align: center;
+  font-size: 1.125em;
+  font-weight: $base-font-semibold;
+  color: $ocean-blue;
+}
+
+.oauth-modal .modal-footer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+
+.oauth-modal .error__report .button.button--copy_error {
+  display: none;
+}
+
+.modal_subtitle {
+  font-weight: $base-font-semibold;
+}
+
+.default-modal {
+  .modal-body {
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+
+    .error {
+      word-wrap: break-word;
+      margin: 1em auto;
+      font-style: italic;
+    }
+
+    ul {
+      margin: 1em;
+
+      li {
+        font-weight: 700;
+        line-height: 24px;
+
+        .Collapsible__contentInner {
+          font-weight: normal;
+          max-width: none;
+          color: $error-red;
+        }
+      }
+    }
+
+    .alert {
+      margin-bottom: 2em;
+    }
+
+    p,
+    span {
+      margin: 0 0 1em 0;
+    }
+
+    .disclaimer {
+      margin: 0 0 2em 0;
+      color: #968a23;
+      background-color: rgba($color: #fcf7d1, $alpha: 0.5);
+      font-weight: 400;
+      border-bottom: 1px solid #968a23;
+      border-top: 1px solid #968a23;
+      padding: 1em 0;
+    }
+
+    .dropdown__wrapper {
+      float: none;
+    }
+  }
+
+  &.granule-inventory {
+    .list-name {
+      color: $theme--blue;
+      margin: 1em;
+
+      .form__text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        label {
+          margin-right: 0.5em;
+        }
+
+        input {
+          min-width: 200px;
+        }
+      }
+    }
+  }
+
+  .batch_granules--reingest,
+  .granule--reingest {
+    text-align: left;
+  }
+
+  &.bulk_granules {
+    &.modal-dialog {
+      overflow-y: initial !important;
+      max-height: 85%;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      min-width: 750px;
+    }
+
+    .modal-body {
+      height: 100px;
+      margin-left: 10px;
+      overflow-y: auto;
+      text-align: left;
+    }
+
+    .button__arrow--md:hover:after {
+      left: 85%;
+    }
+
+    ol {
+      counter-reset: my-counter;
+    }
+
+    ol li {
+      counter-increment: my-counter;
+      position: relative;
+    }
+
+    ol li::before {
+      content: counter(my-counter);
+      background: $ocean-blue;
+      border-radius: 50%;
+      color: white;
+      display: inline-block;
+      font-size: 1rem;
+      height: 2rem;
+      line-height: 2;
+      margin: 0.5rem;
+      text-align: center;
+      width: 2rem;
+    }
+  }
+
+  .bulk_granules__title.modal-title.h4 {
+    padding: 0 1.25rem;
+    font-size: 1.125rem;
+
+    p {
+      text-align: center;
+      padding-top: 1.125rem;
+    }
+  }
+
+  &.bulk_granules--operations,
+  &.bulk_granules--delete,
+  &.bulk_granules--reingest,
+  &.bulk_granules--recovery {
+    .modal-body {
+      height: 425px;
+    }
+  }
+
+  &.execution__modal {
+    max-width: 80%;
+
+    .modal-title {
+      padding: 0 3rem;
+
+      .button {
+        font-size: 0.86rem;
+      }
+    }
+
+    .modal-content,
+    .modal-body {
+      max-height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+
+    .modal-body {
+      padding: 1rem 3rem;
+      text-align: left;
+
+      pre {
+        border: 1px solid $lightest-grey;
+      }
+    }
+
+    .modal-footer {
+      padding: 1rem 3rem;
+
+      .button {
+        margin: 0;
+      }
+    }
+
+    &--visual {
+      .modal-dialog {
+        max-width: none;
+        width: 75%;
+      }
+
+      .modal-header {
+        padding: 0;
+
+        .header {
+          width: 100%;
+          color: white;
+          padding: 0.5em 1em;
+          display: flex;
+          justify-content: space-between;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

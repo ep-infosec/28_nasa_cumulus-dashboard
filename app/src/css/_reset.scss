@@ -1,0 +1,134 @@
+/**
+ * Reset ==============================================================
+ * Based on http://meyerweb.com/eric/tools/css/reset
+ */
+
+html,
+body,
+
+/* Structures */
+div,
+span,
+applet,
+object,
+iframe,
+
+/* Text */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+
+/* Lists */
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+
+/* Forms */
+fieldset,
+form,
+input,
+select,
+textarea,
+label,
+legend,
+
+/* Tables */
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin:0px;
+  padding:0px;
+  border:0px;
+  outline:0px;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+  line-height:inherit;
+  }
+
+ol,
+ul,
+.item-list ul,
+.item-list ul li {
+  list-style:none;
+  }
+
+blockquote,
+q { quotes:none; }
+
+blockquote:before,
+blockquote:after,
+q:before, q:after {
+  content:'';
+  content:none;
+  }
+
+/* :focus for non-supporting browsers of :focus-visible */
+:focus { 
+  outline:2px solid $ocean-blue; 
+  box-shadow: 1px 1px 5px rgba($color: #ffffff, $alpha: .5);
+}
+
+/* :focus:not(:focus-visible) for mouse and tap on Chrome 86+ and other supported browsers */
+:focus:not(:focus-visible) {
+  outline: 0px;
+}
+
+/* :focus-visible for keyboard on browsers that support this element and :-moz-focusring for Firefox under version 85 */
+:focus-visible, :-moz-focusring { 
+  outline:2px solid $ocean-blue; 
+  box-shadow: 1px 1px 5px rgba($color: #000000, $alpha: .5);
+  transition: all 1s ease-in-out;
+}
+
+button:focus-visible { 
+  outline:2px solid $ocean-blue; 
+  box-shadow: 1px 1px 5px rgba($color: #000000, $alpha: .75);
+  transition: all 1s ease-in-out;
+}
+
+/* remember to highlight inserts somehow! */
+ins { text-decoration:none; }
+del { text-decoration:line-through; }

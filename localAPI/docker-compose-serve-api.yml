@@ -1,0 +1,29 @@
+version: "3"
+services:
+  serve_api:
+    image: ${DOCKER_REPOSITORY}node:14.19.1
+    network_mode: "service:shim"
+    depends_on:
+      - localstack
+      - elasticsearch
+    command: [ "./localAPI/wait-for-stack.sh", "./node_modules/@cumulus/api/bin/cli.js", "serve", "--no-reseed" ]
+    working_dir:
+      /cumulus-dashboard
+    volumes:
+      - ../:/cumulus-dashboard
+    environment:
+      - LOCALSTACK_HOST=localhost
+      - LOCAL_ES_HOST=localhost
+      - NODE_ENV=test
+      - cmr_provider=CUMULUS
+      - FAKE_AUTH=true
+  shim:   # empty container to open ports
+    image: ${DOCKER_REPOSITORY}node:14.19.1
+    command:
+      bash -c "tail -f /dev/null"
+    working_dir:
+      /cumulus-dashboard
+    volumes:
+      - ../:/cumulus-dashboard
+    ports:
+      - "5001:5001"

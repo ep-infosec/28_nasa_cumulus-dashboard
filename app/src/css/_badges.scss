@@ -1,0 +1,74 @@
+.num-title {
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 4px;
+  padding: 0.3em .5em .5em .5em;
+  margin-left: 10px;
+  background: $ocean-blue;
+  color: $white;
+  line-height: .8;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+  font-size: 1em;
+  font-weight: $base-font-regular;
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.2s linear;
+
+  &--inverted {
+    @extend .num-title;
+    background: $white;
+    color: $ocean-blue;
+  }
+
+  &--round {
+    @extend .num-title;
+    border-radius: 50%;
+  }
+}
+
+.status__badge {
+  padding: .4em 1em;
+  border-radius: 4px;
+  margin-left: 5px;
+  color: $white;
+  text-transform: uppercase;
+  font-weight: $base-font-regular;
+  display: inline-block;
+
+  &--small {
+    @extend .status__badge;
+    margin: 0;
+    text-transform: none;
+    font-size: .86em;
+  }
+
+  &--enabled {
+    background-color: #30AD66;
+  }
+  &--disabled {
+    background-color: #36342D;
+  }
+  &--passed {
+    background-color: $theme--success;
+  }
+  &--conflict {
+    background-color: $theme--conflict;
+  }
+  &--running {
+    background-color: $yellow;
+  }
+
+  &--completed,
+  &--succeeded {
+    background-color: $light-green;
+  }
+
+  &--stopped {
+    background-color: $orange;
+  }
+
+  &--failed,
+  &--disabled {
+    background-color: $error-red;
+  }
+}

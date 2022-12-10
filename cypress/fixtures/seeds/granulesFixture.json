@@ -1,0 +1,472 @@
+{
+  "meta": {
+    "stack": "test-src-integration",
+    "table": "granule",
+    "limit": 10,
+    "page": 1,
+    "count": 10
+  },
+  "results": [
+    {
+      "granuleId": "MOD09GQ.A1530852.CljGDp.006.2163412421938",
+      "execution": "https://console.aws.amazon.com/states/home?region=us-east-1#/executions/details/arn:aws:states:us-east-1:123456789012:execution:TestSourceIntegrationIngestGranuleStateMachine-MOyI0myKEXzf:7a71f849-57a0-40e7-8fca-5cf796602a07",
+      "lastUpdateDateTime": "2018-04-25T21:45:45.524Z",
+      "published": true,
+      "error": {
+        "Cause": "\"None\"",
+        "Error": "Unknown Error"
+      },
+      "productVolume": "17956339",
+      "endingDateTime": "2017-11-08T23:59:59.000Z",
+      "timeToPreprocess": 0.1,
+      "duration": 26.966,
+      "cmrLink": "https://cmr.uat.earthdata.nasa.gov/search/granules.json?concept_id=G1224020882-CUMULUS",
+      "createdAt": 1537831756154,
+      "provider": "s3_provider",
+      "beginningDateTime": "2017-10-24T00:00:00.000Z",
+      "timeToArchive": 0.01,
+      "files": [
+        {
+          "bucket": "cumulus-test-sandbox-protected",
+          "key": "MOD09GQ___006/2017/MOD/MOD09GQ.A1530852.CljGDp.006.2163412421938.hdf",
+          "size": 16734,
+          "fileName": "MOD09GQ.A1530852.CljGDp.006.2163412421938.hdf"
+        },
+        {
+          "bucket": "cumulus-test-sandbox-private",
+          "key": "MOD09GQ___006/MOD/MOD09GQ.A1530852.CljGDp.006.2163412421938.hdf.met",
+          "size": 12314,
+          "fileName": "MOD09GQ.A1530852.CljGDp.006.2163412421938.hdf.met"
+        },
+        {
+          "bucket": "cumulus-test-sandbox-public",
+          "key": "MOD09GQ___006/MOD/MOD09GQ.A1530852.CljGDp.006.2163412421938_ndvi.jpg",
+          "size": 1675634,
+          "fileName": "MOD09GQ.A1530852.CljGDp.006.2163412421938_ndvi.jpg"
+        },
+        {
+          "bucket": "cumulus-test-sandbox-protected-2",
+          "key": "MOD09GQ___006/MOD/MOD09GQ.A1530852.CljGDp.006.2163412421938.cmr.xml",
+          "size": 67867,
+          "fileName": "MOD09GQ.A1530852.CljGDp.006.2163412421938.cmr.xml"
+        }
+      ],
+      "collectionId": "MOD09GQ___006",
+      "status": "queued",
+      "timestamp": 1537831783729,
+      "updatedAt": 1537831783389
+    },    {
+      "granuleId": "test_12345678_123456_metopa_12345_eps_o_coa_1234_ovwcl2",
+      "execution": "https://console.aws.amazon.com/states/home?region=us-east-1#/executions/details/arn:aws:states:us-east-1:123456789012:execution:TestSourceIntegrationIngestGranuleStateMachine-MOyI0myKEXzf:7a71f849-57a0-40e7-8fca-5cf796602a07",
+      "lastUpdateDateTime": "2018-04-25T21:45:45.524Z",
+      "published": true,
+      "error": {
+        "Cause": "\"None\"",
+        "Error": "Unknown Error"
+      },
+      "productVolume": "17956339",
+      "endingDateTime": "2017-11-08T23:59:59.000Z",
+      "timeToPreprocess": 0.1,
+      "duration": 26.966,
+      "cmrLink": "https://cmr.uat.earthdata.nasa.gov/search/granules.json?concept_id=G1224020882-CUMULUS",
+      "createdAt": 1537831756154,
+      "provider": "s3_provider",
+      "beginningDateTime": "2017-10-24T00:00:00.000Z",
+      "timeToArchive": 0.01,
+      "files": [
+        {
+          "bucket": "cumulus-test-sandbox-protected",
+          "key": "test_12345678_123456_metopa_12345_eps_o_coa_1234_ovwcl2.hdf",
+          "fileName": "test_12345678_123456_metopa_12345_eps_o_coa_1234_ovwcl2.hdf",
+          "size" : 782
+        }
+      ],
+      "collectionId": "Test-L2-Coastal___Operational/Near-Real-Time",
+      "status": "completed",
+      "timestamp": 1537831783729,
+      "updatedAt": 1537831783389
+    },
+    {
+      "granuleId": "MOD09GQ.A1657416.CbyoRi.006.9697917818587",
+      "execution": "https://console.aws.amazon.com/states/home?region=us-east-1#/executions/details/arn:aws:states:us-east-1:123456789012:execution:TestSourceIntegrationParsePdrStateMachine-JVlCKfoXElDQ:9888b858-d70c-42ec-a887-c9367dcfd7cf",
+      "lastUpdateDateTime": "2018-04-25T21:45:45.524Z",
+      "processingEndDateTime": "2018-09-24T23:28:45.731Z",
+      "published": true,
+      "error": {
+        "Cause": "\"None\"",
+        "Error": "Unknown Error"
+      },
+      "productVolume": "17956339",
+      "endingDateTime": "2017-11-08T23:59:59.000Z",
+      "timeToPreprocess": 0.3,
+      "duration": 14.815,
+      "cmrLink": "https://cmr.uat.earthdata.nasa.gov/search/granules.json?concept_id=G1224020881-CUMULUS",
+      "createdAt": 1537831723341,
+      "provider": "s3_provider",
+      "beginningDateTime": "2017-10-24T00:00:00.000Z",
+      "timeToArchive": 10.541,
+      "files": [
+        {
+          "bucket": "cumulus-test-sandbox-protected",
+          "key": "MOD09GQ___006/2017/MOD/MOD09GQ.A1657416.CbyoRi.006.9697917818587.hdf",
+          "size" : 10239,
+          "fileName": "MOD09GQ.A1657416.CbyoRi.006.9697917818587.hdf"
+        },
+        {
+          "bucket": "cumulus-test-sandbox-private",
+          "key": "MOD09GQ___006/MOD/MOD09GQ.A1657416.CbyoRi.006.9697917818587.hdf.met",
+          "size" : 657,
+          "fileName": "MOD09GQ.A1657416.CbyoRi.006.9697917818587.hdf.met"
+        },
+        {
+          "bucket": "cumulus-test-sandbox-public",
+          "key": "MOD09GQ___006/MOD/MOD09GQ.A1657416.CbyoRi.006.9697917818587_ndvi.jpg",
+          "size" : 2341,
+          "fileName": "MOD09GQ.A1657416.CbyoRi.006.9697917818587_ndvi.jpg"
+        },
+        {
+          "bucket": "cumulus-test-sandbox-protected-2",
+          "key": "MOD09GQ___006/MOD/MOD09GQ.A1657416.CbyoRi.006.9697917818587.cmr.xml",
+          "size" : 124521,
+          "fileName": "MOD09GQ.A1657416.CbyoRi.006.9697917818587.cmr.xml"
+        }
+      ],
+      "collectionId": "MOD09GQ___006",
+      "status": "running",
+      "timestamp": 1537831751216,
+      "updatedAt": 1537831750922
+    },
+    {
+      "granuleId": "MOD09GQ.A2016358.h13v04.006.2016360104606.hdf",
+      "pdrName": "MOD09GQ_1granule_v3.PDR",
+      "execution": "https://console.aws.amazon.com/states/home?region=us-east-1#/executions/details/arn:aws:states:us-east-1:123456789012:execution:TestSourceIntegrationIngestGranuleStateMachine-MOyI0myKEXzf:c33e4091-e90d-449c-93f5-c4462b6e4e87",
+      "published": false,
+      "error": {
+        "Cause": "\"None\"",
+        "Error": "Unknown Error"
+      },
+      "productVolume": "17909733",
+      "timeToPreprocess": 2.863,
+      "duration": 7.442,
+      "createdAt": 1537831670335,
+      "processingStartDateTime": "2018-09-24T23:27:55.872Z",
+      "provider": "s3_provider",
+      "timeToArchive": 0.01,
+      "files": [
+        {
+          "bucket": "cumulus-test-sandbox-internal",
+          "size" : 456,
+          "fileName": "s3://cumulus-test-sandbox-internal/custom-staging-dir/test-src-integration/MOD09GQ___006/MOD09GQ.A2016358.h13v04.006.2016360104606.hdf"
+        },
+        {
+          "bucket": "cumulus-test-sandbox-internal",
+          "size" : 1234,
+          "fileName": "s3://cumulus-test-sandbox-internal/custom-staging-dir/test-src-integration/MOD09GQ___006/MOD09GQ.A2016358.h13v04.006.2016360104606.hdf.met"
+        }
+      ],
+      "collectionId": "MOD09GQ___006",
+      "status": "completed",
+      "timestamp": 1537831678152,
+      "updatedAt": 1537831677777
+    },
+    {
+      "granuleId": "MOD09GQ.A2016358.h13v04.006.2016360104606",
+      "pdrName": "MOD09GQ_1granule_v3.PDR",
+      "execution": "https://console.aws.amazon.com/states/home?region=us-east-1#/executions/details/arn:aws:states:us-east-1:123456789012:execution:TestSourceIntegrationParsePdrStateMachine-JVlCKfoXElDQ:9888b858-d70c-42ec-a887-c9367dcfd7cf",
+      "published": false,
+      "error": {
+        "Cause": "\"None\"",
+        "Error": "Unknown Error"
+      },
+      "productVolume": "17911979",
+      "timeToPreprocess": 0.342,
+      "duration": 20.572,
+      "createdAt": 1542053110348,
+      "provider": "s3_provider",
+      "timeToArchive": 0.01,
+      "files": [
+        {
+          "bucket": "cumulus-test-sandbox-protected",
+          "size" : 34,
+          "fileName": "s3://cumulus-test-sandbox-protected/MOD09GQ___006/2017/MOD/MOD09GQ.A2016358.h13v04.006.2016360104606.hdf"
+        },
+        {
+          "bucket": "cumulus-test-sandbox-private",
+          "size" : 123,
+          "fileName": "s3://cumulus-test-sandbox-private/MOD09GQ___006/MOD/MOD09GQ.A2016358.h13v04.006.2016360104606.hdf.met"
+        },
+        {
+          "bucket": "cumulus-test-sandbox-protected-2",
+          "size" : 5667,
+          "fileName": "s3://cumulus-test-sandbox-protected-2/MOD09GQ___006/MOD/MOD09GQ.A2016358.h13v04.006.2016360104606.cmr.xml"
+        }
+      ],
+      "collectionId": "MOD09GQ___006",
+      "status": "completed",
+      "timestamp": 1596203544626,
+      "updatedAt": 1596203544157
+    },
+    {
+      "granuleId": "MOD09GQ.A5456658.rso6Y4.006.4979096122140",
+      "execution": "https://console.aws.amazon.com/states/home?region=us-east-1#/executions/details/arn:aws:states:us-east-1:123456789012:execution:TestSourceIntegrationIngestGranuleStateMachine-MOyI0myKEXzf:8e21ca0f-79d3-4782-8247-cacd42a595ea",
+      "lastUpdateDateTime": "2018-04-25T21:45:45.524Z",
+      "published": true,
+      "error": {
+        "Cause": "\"None\"",
+        "Error": "Unknown Error"
+      },
+      "productVolume": "17956339",
+      "endingDateTime": "2017-11-08T23:59:59.000Z",
+      "timeToPreprocess": 0.432,
+      "duration": 26.701,
+      "cmrLink": "https://cmr.uat.earthdata.nasa.gov/search/granules.json?concept_id=G1224020880-CUMULUS",
+      "createdAt": 1537830666647,
+      "provider": "s3_provider",
+      "beginningDateTime": "2017-10-24T00:00:00.000Z",
+      "timeToArchive": 0.043,
+      "files": [
+        {
+          "bucket": "cumulus-test-sandbox-protected",
+          "size" : 10239,
+          "fileName": "s3://cumulus-test-sandbox-protected/MOD09GQ___006/2017/MOD/MOD09GQ.A5456658.rso6Y4.006.4979096122140.hdf"
+        },
+        {
+          "bucket": "cumulus-test-sandbox-private",
+          "size" : 523,
+          "fileName": "s3://cumulus-test-sandbox-private/MOD09GQ___006/MOD/MOD09GQ.A5456658.rso6Y4.006.4979096122140.hdf.met"
+        },
+        {
+          "bucket": "cumulus-test-sandbox-public",
+          "size" : 45743,
+          "fileName": "s3://cumulus-test-sandbox-public/MOD09GQ___006/MOD/MOD09GQ.A5456658.rso6Y4.006.4979096122140_ndvi.jpg"
+        },
+        {
+          "bucket": "cumulus-test-sandbox-protected-2",
+          "size" : 10223439,
+          "fileName": "s3://cumulus-test-sandbox-protected-2/MOD09GQ___006/MOD/MOD09GQ.A5456658.rso6Y4.006.4979096122140.cmr.xml"
+        }
+      ],
+      "collectionId": "MOD09GQ___006",
+      "status": "completed",
+      "timestamp": 1537830693975,
+      "updatedAt": 1537830693542
+    },
+    {
+      "granuleId": "MOD09GQ.A2417309.YZ9tCV.006.4640974889044",
+      "execution": "https://console.aws.amazon.com/states/home?region=us-east-1#/executions/details/arn:aws:states:us-east-1:123456789012:execution:TestSourceIntegrationIngestGranuleStateMachine-MOyI0myKEXzf:c33e4091-e90d-449c-93f5-c4462b6e4e87",
+      "published": false,
+      "error": {
+        "Cause": "{\"errorMessage\":\"verifyFile s3://cumulus-test-sandbox-internal/non-existent-path/non-existent-file failed: Actual file size 2MB did not match expected file size 3MB\",\"errorType\":\"UnexpectedFileSize\",\"stackTrace\":[\"S3Granule.sync (/var/task/index.js:147549:13)\",\"<anonymous>\",\"process._tickDomainCallback (internal/process/next_tick.js:228:7)\"]}",
+        "Error": "UnexpectedFileSize"
+      },
+      "productVolume": "17953851",
+      "timeToPreprocess": 0.935,
+      "duration": 27.969,
+      "createdAt": 1537830592105,
+      "provider": "s3_provider",
+      "timeToArchive": 0.043,
+      "files": [
+        {
+        }
+      ],
+      "collectionId": "MOD09GQ___006",
+      "status": "failed",
+      "timestamp": 1537830620568,
+      "updatedAt": 1537830620074
+    },
+    {
+      "granuleId": "MOD09GQ.A0142558.ee5lpE.006.5112577830916",
+      "execution": "https://console.aws.amazon.com/states/home?region=us-east-1#/executions/details/arn:aws:states:us-east-1:123456789012:execution:TestSourceIntegrationDiscoverAndQueuePdrsStateMachine-T4MDdDs9ADnK:c3ce6b76-a5f5-47d2-80a5-8b5c56300da8",
+      "lastUpdateDateTime": "2018-04-25T21:45:45.524Z",
+      "published": true,
+      "error": {
+        "Cause": "\"None\"",
+        "Error": "Unknown Error"
+      },
+      "productVolume": "17956339",
+      "endingDateTime": "2017-11-08T23:59:59.000Z",
+      "timeToPreprocess": 0.342,
+      "duration": 25.752,
+      "cmrLink": "https://cmr.uat.earthdata.nasa.gov/search/granules.json?concept_id=G1224020684-CUMULUS",
+      "createdAt": 1537811590359,
+      "provider": "s3_provider",
+      "beginningDateTime": "2017-10-24T00:00:00.000Z",
+      "timeToArchive": 0.30,
+      "files": [
+        {
+          "bucket": "cumulus-test-sandbox-protected",
+          "size" : 10239,
+          "fileName": "s3://cumulus-test-sandbox-protected/MOD09GQ___006/2017/MOD/MOD09GQ.A0142558.ee5lpE.006.5112577830916.hdf"
+        },
+        {
+          "bucket": "cumulus-test-sandbox-private",
+          "size" : 544,
+          "fileName": "s3://cumulus-test-sandbox-private/MOD09GQ___006/MOD/MOD09GQ.A0142558.ee5lpE.006.5112577830916.hdf.met"
+        },
+        {
+          "bucket": "cumulus-test-sandbox-public",
+          "size" : 345,
+          "fileName": "s3://cumulus-test-sandbox-public/MOD09GQ___006/MOD/MOD09GQ.A0142558.ee5lpE.006.5112577830916_ndvi.jpg"
+        },
+        {
+          "bucket": "cumulus-test-sandbox-protected-2",
+          "size" : 86754,
+          "fileName": "s3://cumulus-test-sandbox-protected-2/MOD09GQ___006/MOD/MOD09GQ.A0142558.ee5lpE.006.5112577830916.cmr.xml"
+        }
+      ],
+      "collectionId": "MOD09GQ___006",
+      "status": "completed",
+      "timestamp": 1537811617065,
+      "updatedAt": 1537811616392
+    },
+    {
+      "granuleId": "MOD09GQ.A0501579.PZB_CG.006.8580266395214",
+      "execution": "https://console.aws.amazon.com/states/home?region=us-east-1#/executions/details/arn:aws:states:us-east-1:123456789012:execution:TestSourceIntegrationIngestGranuleStateMachine-MOyI0myKEXzf:7a71f849-57a0-40e7-8fca-5cf796602a07",
+      "lastUpdateDateTime": "2018-04-25T21:45:45.524Z",
+      "processingEndDateTime": "2018-09-24T17:52:34.578Z",
+      "published": true,
+      "error": {
+        "Cause": "\"None\"",
+        "Error": "Unknown Error"
+      },
+      "productVolume": "17956339",
+      "endingDateTime": "2017-11-08T23:59:59.000Z",
+      "timeToPreprocess": 0.83,
+      "duration": 14.011,
+      "cmrLink": "https://cmr.uat.earthdata.nasa.gov/search/granules.json?concept_id=G1224020683-CUMULUS",
+      "createdAt": 1537811552232,
+      "provider": "s3_provider",
+      "beginningDateTime": "2017-10-24T00:00:00.000Z",
+      "timeToArchive": 9.884,
+      "files": [
+        {
+          "bucket": "cumulus-test-sandbox-protected",
+          "size" : 10239,
+          "fileName": "s3://cumulus-test-sandbox-protected/MOD09GQ___006/2017/MOD/MOD09GQ.A0501579.PZB_CG.006.8580266395214.hdf"
+        },
+        {
+          "bucket": "cumulus-test-sandbox-private",
+          "size" : 457,
+          "fileName": "s3://cumulus-test-sandbox-private/MOD09GQ___006/MOD/MOD09GQ.A0501579.PZB_CG.006.8580266395214.hdf.met"
+        },
+        {
+          "bucket": "cumulus-test-sandbox-public",
+          "size" : 2342,
+          "fileName": "s3://cumulus-test-sandbox-public/MOD09GQ___006/MOD/MOD09GQ.A0501579.PZB_CG.006.8580266395214_ndvi.jpg"
+        },
+        {
+          "bucket": "cumulus-test-sandbox-protected-2",
+          "size" : 23545,
+          "fileName": "s3://cumulus-test-sandbox-protected-2/MOD09GQ___006/MOD/MOD09GQ.A0501579.PZB_CG.006.8580266395214.cmr.xml"
+        }
+      ],
+      "collectionId": "MOD09GQ___006",
+      "status": "running",
+      "timestamp": 1537811586955,
+      "updatedAt": 1537811586313
+    },
+    {
+      "granuleId": "MOD09GQ.A8022119.sk3Sph.006.0494433853533",
+      "execution": "https://console.aws.amazon.com/states/home?region=us-east-1#/executions/details/arn:aws:states:us-east-1:123456789012:execution:TestSourceIntegrationIngestGranuleStateMachine-MOyI0myKEXzf:7a71f849-57a0-40e7-8fca-5cf796602a07",
+      "lastUpdateDateTime": "2018-04-25T21:45:45.524Z",
+      "published": true,
+      "error": {
+        "Cause": "\"None\"",
+        "Error": "Unknown Error"
+      },
+      "productVolume": "17956339",
+      "endingDateTime": "2017-11-08T23:59:59.000Z",
+      "timeToPreprocess": 0.892,
+      "duration": 26.939,
+      "cmrLink": "https://cmr.uat.earthdata.nasa.gov/search/granules.json?concept_id=G1224020681-CUMULUS",
+      "createdAt": 1537810695121,
+      "provider": "s3_provider",
+      "beginningDateTime": "2017-10-24T00:00:00.000Z",
+      "timeToArchive": 0.03,
+      "files": [
+        {
+          "bucket": "cumulus-test-sandbox-protected",
+          "size": 123124,
+          "fileName": "s3://cumulus-test-sandbox-protected/MOD09GQ___006/2017/MOD/MOD09GQ.A8022119.sk3Sph.006.0494433853533.hdf"
+        },
+        {
+          "bucket": "cumulus-test-sandbox-private",
+          "size": 124235,
+          "fileName": "s3://cumulus-test-sandbox-private/MOD09GQ___006/MOD/MOD09GQ.A8022119.sk3Sph.006.0494433853533.hdf.met"
+        },
+        {
+          "bucket": "cumulus-test-sandbox-public",
+          "size": 568756,
+          "fileName": "s3://cumulus-test-sandbox-public/MOD09GQ___006/MOD/MOD09GQ.A8022119.sk3Sph.006.0494433853533_ndvi.jpg"
+        },
+        {
+          "bucket": "cumulus-test-sandbox-protected-2",
+          "size": 123124,
+          "fileName": "s3://cumulus-test-sandbox-protected-2/MOD09GQ___006/MOD/MOD09GQ.A8022119.sk3Sph.006.0494433853533.cmr.xml"
+        }
+      ],
+      "collectionId": "MOD09GQ___006",
+      "status": "completed",
+      "timestamp": 1537810722632,
+      "updatedAt": 1537810722395
+    },
+    {
+      "granuleId": "MOD09GQ.A9344328.K9yI3O.006.4625818663028",
+      "execution": "https://console.aws.amazon.com/states/home?region=us-east-1#/executions/details/arn:aws:states:us-east-1:123456789012:execution:TestSourceIntegrationIngestAndPublishGranuleStateMachine-yCAhWOss5Xgo:b313e777-d28a-435b-a0dd-f1fad08116t1",
+      "published": false,
+      "error": {
+        "Cause": "{\"errorMessage\":\"Source file not found s3://cumulus-test-sandbox-internal/non-existent-path/non-existent-file\",\"errorType\":\"FileNotFound\",\"stackTrace\":[\"S3Granule.sync (/var/task/index.js:147549:13)\",\"<anonymous>\",\"process._tickDomainCallback (internal/process/next_tick.js:228:7)\"]}",
+        "Error": "FileNotFound"
+      },
+      "productVolume": "17953851",
+      "timeToPreprocess": 0.783,
+      "duration": 26.981,
+      "createdAt": 1537810191858,
+      "provider": "s3_provider",
+      "timeToArchive": 0.3,
+      "files": [
+        {
+        }
+      ],
+      "collectionId": "MOD09GQ___006",
+      "status": "failed",
+      "timestamp": 1537810219425,
+      "updatedAt": 1537810218839
+    },
+    {
+      "beginningDateTime": "2017-10-24T00:00:00Z",
+      "collectionId": "MOD09GQ___006",
+      "createdAt": 1576106363823,
+      "duration": 7.546,
+      "endingDateTime": "2017-11-08T23:59:59Z",
+      "error": {
+        "Cause": "None",
+        "Error": "Unknown Error"
+      },
+      "execution": "https://console.aws.amazon.com/states/home?region=us-east-1#/executions/details/arn:aws:states:us-east-1:123456789012:execution:TestSourceIntegrationIngestGranuleStateMachine-MOyI0myKEXzf:c33e4091-e90d-449c-93f5-c4462b6e4e87",
+      "files": [
+        {
+          "bucket": "cumulus-test-sandbox-protected-2",
+          "fileName": "MOD09GQ.A4622742.B7A8Ma.006.7857260550036.cmr.xml",
+          "key": "MOD09GQ___006/MOD/MOD09GQ.A4622742.B7A8Ma.006.7857260550036.cmr.xml",
+          "size": 2488,
+          "source": "s3://cumulus-test-sandbox-protected-2/MOD09GQ___006/MOD/MOD09GQ.A4622742.B7A8Ma.006.7857260550036.cmr.xml",
+          "type": "metadata"
+        }
+      ],
+      "granuleId": "MOD09GQ.A4622742.B7A8Ma.006.7857260550036",
+      "lastUpdateDateTime": "2018-04-25T21:45:45.524053",
+      "processingEndDateTime": "2019-12-11T23:19:30.946Z",
+      "processingStartDateTime": "2019-12-11T23:19:23.823Z",
+      "productionDateTime": "2018-07-19T12:01:01Z",
+      "productVolume": "2488",
+      "provider": "s3_provider",
+      "published": false,
+      "status": "completed",
+      "timestamp": 1576106371369,
+      "timeToArchive": 0.01,
+      "timeToPreprocess": 0.318,
+      "updatedAt": 1576106371468
+    }
+  ]
+}

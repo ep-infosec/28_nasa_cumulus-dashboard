@@ -1,0 +1,53 @@
+.card-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  max-height: 165px;
+}
+
+.card {
+  width: 10em;
+  cursor: pointer;
+  margin: 1em 1em 1em 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s ease 0s;
+
+  .card-header {
+    color: $white;
+    background-color: $grey;
+  }
+
+  .h5 {
+    font-size: 1.25rem;
+  }
+
+  &:hover {
+    margin: 0.5em 1em 1.5em 0;
+    box-shadow: $shadow__hover;
+  }
+
+  &.active {
+    .card-header {
+      background-color: $theme--blue;
+    }
+  }
+}
+
+.tablecard--wrapper {
+  display: flex;
+  margin-top: 1.5em;
+  justify-content: center;
+
+  .table-card {
+    margin-right: 1em;
+
+    &--title-caption {
+      font-weight: $base-font-semibold;
+      margin-bottom: 0.5em;
+    }
+
+    &:first-child {
+      border-right: 1px solid $lightest-grey;
+    }
+  }
+}
